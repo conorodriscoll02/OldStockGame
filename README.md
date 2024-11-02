@@ -1,4 +1,5 @@
-<h1>Old Stock Game</h1>
+<h1>Old Stock Game (Professional Pratice in IT project feature parity)</h1>
+It is no longer possible to use this branch to build a feature complete version of the game. Specifically, it is not possible to interact with Firebase. A pre-built release with this functionality will be made available soon.
 <h2> Created on Godot v4.2.1</h2>
 <br>If you would like to open the project:
 <br>-> Download and extract Godot 4 to a folder 
