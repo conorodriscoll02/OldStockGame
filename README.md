@@ -1,4 +1,5 @@
 <h1>Old Stock Game</h1>
+<b>Note:</b> Please visit the <a href= "https://github.com/conorodriscoll02/OldStockGame/tree/ppit-archive">ppit-archive</a> branch if you are looking for the Professional Pratice in IT project.
 <h2> Created on Godot v4.2.1</h2>
 <br>If you would like to open the project:
 <br>-> Download and extract Godot 4 to a folder 
