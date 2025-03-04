@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://b0r2hrdmnhhdb"]
 
-[ext_resource type="Script" path="res://Scripts/Debug_HighScore.gd" id="1_tkap5"]
+[ext_resource type="Script" uid="uid://bsjr0t2ek6d4a" path="res://Scripts/Debug_HighScore.gd" id="1_tkap5"]
 [ext_resource type="StyleBox" uid="uid://bwg818nwk5gr0" path="res://Assets/ModelMats/UI/Buttons/normal.tres" id="2_7rg8q"]
 [ext_resource type="StyleBox" uid="uid://b7p2heogmqqyh" path="res://Assets/ModelMats/UI/Buttons/hover.tres" id="3_bdwyq"]
 [ext_resource type="StyleBox" uid="uid://dg5kla4lifhdn" path="res://Assets/ModelMats/UI/Buttons/pressed.tres" id="4_4fs6r"]

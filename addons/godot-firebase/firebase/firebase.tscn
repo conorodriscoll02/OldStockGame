@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://cvb26atjckwlq"]
 
-[ext_resource type="Script" path="res://addons/godot-firebase/database/database.gd" id="1"]
-[ext_resource type="Script" path="res://addons/godot-firebase/firestore/firestore.gd" id="2"]
-[ext_resource type="Script" path="res://addons/godot-firebase/firebase/firebase.gd" id="3"]
-[ext_resource type="Script" path="res://addons/godot-firebase/auth/auth.gd" id="4"]
-[ext_resource type="Script" path="res://addons/godot-firebase/storage/storage.gd" id="5"]
-[ext_resource type="Script" path="res://addons/godot-firebase/dynamiclinks/dynamiclinks.gd" id="6"]
-[ext_resource type="Script" path="res://addons/godot-firebase/functions/functions.gd" id="7"]
+[ext_resource type="Script" uid="uid://cebrqpd85vjnk" path="res://addons/godot-firebase/database/database.gd" id="1"]
+[ext_resource type="Script" uid="uid://ds0vm4byeaxcl" path="res://addons/godot-firebase/firestore/firestore.gd" id="2"]
+[ext_resource type="Script" uid="uid://dsfsuocqtnbcf" path="res://addons/godot-firebase/firebase/firebase.gd" id="3"]
+[ext_resource type="Script" uid="uid://de48yhaoq5r7l" path="res://addons/godot-firebase/auth/auth.gd" id="4"]
+[ext_resource type="Script" uid="uid://jd2u6rn4h1nx" path="res://addons/godot-firebase/storage/storage.gd" id="5"]
+[ext_resource type="Script" uid="uid://ko0do4pjmepn" path="res://addons/godot-firebase/dynamiclinks/dynamiclinks.gd" id="6"]
+[ext_resource type="Script" uid="uid://tvt600iqtmyl" path="res://addons/godot-firebase/functions/functions.gd" id="7"]
 
 [node name="Firebase" type="Node"]
 script = ExtResource("3")

@@ -1,9 +1,9 @@
 [gd_scene load_steps=21 format=3 uid="uid://cqc17hoh2awcr"]
 
 [ext_resource type="Texture2D" uid="uid://sohn2q70u6a8" path="res://Assets/Textures/debug.png" id="1_85avr"]
-[ext_resource type="Script" path="res://Scripts/GameMaster.gd" id="1_ubhnu"]
+[ext_resource type="Script" uid="uid://c5ewdr4jarugu" path="res://Scripts/GameMaster.gd" id="1_ubhnu"]
 [ext_resource type="PackedScene" uid="uid://cc0chwxocipsn" path="res://Assets/Models/Box_Platform.res" id="2_xilf2"]
-[ext_resource type="Script" path="res://Scripts/DebugSpinningHazard.gd" id="4_4fv0q"]
+[ext_resource type="Script" uid="uid://dk5hvpuettaon" path="res://Scripts/DebugSpinningHazard.gd" id="4_4fv0q"]
 [ext_resource type="PackedScene" uid="uid://um25f3xdqck4" path="res://Assets/Models/player_test.res" id="5_yh4sp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wl6i5"]

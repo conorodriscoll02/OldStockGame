@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8r3r15i4iet5"]
 
-[ext_resource type="Script" path="res://Scripts/DebugMainMenu.gd" id="1_s5ngn"]
-[ext_resource type="Script" path="res://Scripts/Authenticate.gd" id="2_4cfio"]
+[ext_resource type="Script" uid="uid://cfeafkm0vy3ep" path="res://Scripts/DebugMainMenu.gd" id="1_s5ngn"]
+[ext_resource type="Script" uid="uid://ck500xlv57h56" path="res://Scripts/Authenticate.gd" id="2_4cfio"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ofrsx"]
 bg_color = Color(0.541176, 0.709804, 0.701961, 1)
