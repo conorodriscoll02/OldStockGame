@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8r3r15i4iet5"]
+[gd_scene format=3 uid="uid://b8r3r15i4iet5"]
 
 [ext_resource type="Script" uid="uid://cfeafkm0vy3ep" path="res://Scripts/DebugMainMenu.gd" id="1_s5ngn"]
 [ext_resource type="Script" uid="uid://ck500xlv57h56" path="res://Scripts/Authenticate.gd" id="2_4cfio"]
@@ -13,7 +13,7 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
-[node name="DebugMenu" type="Control"]
+[node name="DebugMenu" type="Control" unique_id=547405467]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,7 +22,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_s5ngn")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=132505534]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -31,7 +31,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ofrsx")
 
-[node name="GridContainer" type="GridContainer" parent="."]
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1344093084]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -42,7 +42,7 @@ offset_bottom = -420.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Title" type="Label" parent="GridContainer"]
+[node name="Title" type="Label" parent="GridContainer" unique_id=1347819259]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 50
@@ -50,28 +50,28 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_228qo")
 text = "Old Stock"
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="GridContainer"]
+[node name="Button" type="Button" parent="GridContainer" unique_id=1973794883]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Test Level"
 
-[node name="Button2" type="Button" parent="GridContainer"]
+[node name="Button2" type="Button" parent="GridContainer" unique_id=1800614990]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Level 1"
 
-[node name="Button3" type="Button" parent="GridContainer"]
+[node name="Button3" type="Button" parent="GridContainer" unique_id=1533318198]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Level 2"
 
-[node name="Button4" type="Button" parent="GridContainer"]
+[node name="Button4" type="Button" parent="GridContainer" unique_id=1329201636]
 layout_mode = 2
 size_flags_vertical = 0
 disabled = true
 text = "High Scores"
 
-[node name="Authentication" type="Control" parent="."]
+[node name="Authentication" type="Control" parent="." unique_id=1769891547]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -85,7 +85,7 @@ grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("2_4cfio")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Authentication"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Authentication" unique_id=138041532]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -98,50 +98,50 @@ offset_right = 247.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Warning" type="Label" parent="Authentication/VBoxContainer"]
+[node name="Warning" type="Label" parent="Authentication/VBoxContainer" unique_id=563326668]
 layout_mode = 2
 text = "DO NOT USE YOUR REAL EMAIL AND/OR PASSWORD"
 horizontal_alignment = 1
 
-[node name="Warning2" type="Label" parent="Authentication/VBoxContainer"]
+[node name="Warning2" type="Label" parent="Authentication/VBoxContainer" unique_id=628772876]
 layout_mode = 2
 text = "USE PRETEND ONES ONLY"
 horizontal_alignment = 1
 
-[node name="Warning3" type="Label" parent="Authentication/VBoxContainer"]
+[node name="Warning3" type="Label" parent="Authentication/VBoxContainer" unique_id=882308422]
 layout_mode = 2
 text = "E.G. conor@godotgame.com, testpassword"
 horizontal_alignment = 1
 
-[node name="StateLabel" type="Label" parent="Authentication/VBoxContainer"]
+[node name="StateLabel" type="Label" parent="Authentication/VBoxContainer" unique_id=1870652347]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Not Logged In"
 horizontal_alignment = 1
 
-[node name="Name" type="LineEdit" parent="Authentication/VBoxContainer"]
+[node name="Name" type="LineEdit" parent="Authentication/VBoxContainer" unique_id=1785397026]
 layout_mode = 2
 placeholder_text = "Name (Not Required for Log In)"
 alignment = 1
 
-[node name="EmailInput" type="LineEdit" parent="Authentication/VBoxContainer"]
+[node name="EmailInput" type="LineEdit" parent="Authentication/VBoxContainer" unique_id=1668372282]
 unique_name_in_owner = true
 layout_mode = 2
 placeholder_text = "Email"
 alignment = 1
 
-[node name="PasswordInput" type="LineEdit" parent="Authentication/VBoxContainer"]
+[node name="PasswordInput" type="LineEdit" parent="Authentication/VBoxContainer" unique_id=1443232519]
 unique_name_in_owner = true
 layout_mode = 2
 placeholder_text = "Password"
 alignment = 1
 secret = true
 
-[node name="Login" type="Button" parent="Authentication/VBoxContainer"]
+[node name="Login" type="Button" parent="Authentication/VBoxContainer" unique_id=1118589311]
 layout_mode = 2
 text = "Log In"
 
-[node name="SignUp" type="Button" parent="Authentication/VBoxContainer"]
+[node name="SignUp" type="Button" parent="Authentication/VBoxContainer" unique_id=237626874]
 layout_mode = 2
 text = "Sign Up"
 
