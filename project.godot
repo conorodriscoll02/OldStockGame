@@ -109,3 +109,7 @@ menu={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":6,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[physics]
+
+3d/default_gravity=19.6

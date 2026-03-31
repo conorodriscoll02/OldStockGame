@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 
 const SPEED = 6.25
-const JUMP_VELOCITY = 7.5
+const JUMP_VELOCITY = 10.5
 var jumping
 
 # Animation player
@@ -86,7 +86,7 @@ func _physics_process(delta):
 			
 			# Handle long-jump
 		if Input.is_action_just_pressed("jump") and Input.is_action_pressed("duck") and is_on_floor():
-			velocity.y = 4.5
+			velocity.y = 8
 			velocity.x = direction.x * 20
 			velocity.z = direction.z * 20
 			
@@ -97,7 +97,7 @@ func _physics_process(delta):
 			animationTree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
 			
 			# Give the player some height
-			velocity.y = 5
+			velocity.y = 7.5
 			# Then bounce them off the wall depending on what side of the wall they are facing
 			velocity.x = get_wall_normal().x * 10
 			velocity.z = get_wall_normal().z * 10
