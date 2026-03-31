@@ -80,7 +80,7 @@ func _physics_process(delta):
 			
 			# Handle Jump Cancel
 		if Input.is_action_just_released("jump") and jumping == true and velocity.y > 0:
-			velocity.y = 1
+			velocity.y *= 0.5
 			jumping = false
 			
 			
