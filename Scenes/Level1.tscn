@@ -154,7 +154,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.5, 10)
 checkpoint_list = [Vector3(-1, 2.5, 10), Vector3(-1, 12, -22), Vector3(68, 11.5, -29.5)]
 
 [node name="RightArm" parent="Player/CharacterBody3D/OldStockbk2/OldStockBody" parent_id_path=PackedInt32Array(902960574, 714974113, 872201754) index="4" unique_id=1672119]
-transform = Transform3D(0.12940963, -0.19318502, 1.6198996e-08, 0.48296213, 0.051763892, -2.1111028e-08, 3.2398084e-08, 1.6888768e-08, 0.25, -0.9912949, 0.10013771, -3.01458e-08)
+transform = Transform3D(0.12940963, -0.19318503, 1.6198996e-08, 0.48296213, 0.0517639, -2.1111028e-08, 3.2398084e-08, 1.688877e-08, 0.25, -0.9912949, 0.10013771, -3.01458e-08)
 
 [node name="LevelGeometry" type="Node3D" parent="." unique_id=444478779]
 
