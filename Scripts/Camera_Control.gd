@@ -61,18 +61,21 @@ func _process(delta):
 	pass
 
 func rotate_camera(rotation, speed):
-	# Rotate the camera around the target node
+	## Rotate the camera around the target node
+	# Since the player movement issues caused by the camera facing up or down are fixed, only the camera needs to be rotated.
+	# This simplifies things such as smooth player model rotation. It's just better in general to not mess with the parent player node's rotation.
 	var new_rotation = self.rotation_degrees
-	var new_player_rotation = player_node.global_rotation_degrees
-	new_player_rotation.y -= rotation.x * speed
+	#var new_player_rotation = player_node.global_rotation_degrees
+	#new_player_rotation.y -= rotation.x * speed
 	new_rotation.x -= rotation.y * speed
-
+	new_rotation.y -= rotation.x * speed
 	# Clamp the rotation to avoid flipping the camera
 	new_rotation.x = clamp(new_rotation.x, -89, 89)
 
 	# Apply the new rotation to the camera
 	self.rotation_degrees.x = new_rotation.x
-	player_node.global_rotation_degrees.y = new_player_rotation.y
+	self.rotation_degrees.y = new_rotation.y
+	#player_node.global_rotation_degrees.y = new_player_rotation.y
 	
 # IF the resume button is pressed, return to the game and starting capturing the mouse again
 func _on_resume_button():

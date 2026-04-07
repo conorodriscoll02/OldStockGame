@@ -65,7 +65,11 @@ func _physics_process(delta):
 		game_menu.visible = false
 		# Get the input direction
 		var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backwards")
-		var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		var direction = ($OrbitCamera.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized() # Move in the direction the camera is facing
+		
+		# Make the direction only face X and Z axis
+		direction.y = 0
+		direction = direction.normalized() # Normalize the X and Z values (if facing Up or Down, they are tiny values, slowing down the player)
 		
 		#Set the blend of the animation depending on the axis inputted by the user
 		animationTree.set("parameters/BlendSpace2D/blend_position", input_dir)
@@ -106,6 +110,15 @@ func _physics_process(delta):
 		if direction:
 			velocity.x = move_toward(velocity.x, direction.x * SPEED, 15 * delta)
 			velocity.z = move_toward(velocity.z, direction.z * SPEED, 15 * delta)
+			
+			## Handle rotating the player model to face the direction the player is moving
+			# We use the direction's X and Z values to create a sort of point on a possible graph looking down facing Y-axis (top view)
+			# This is provided to "atan2" to get the angle of rotation on the y-axis
+			# We then use "lerp_angle" to interpolate to that angle. It also handles finding the smallest need rotation.
+			# This stops a previous issue I had trying to achieve this where the player model would do a massive spin when moving the camera between 350*-20* range.
+			var target = atan2(direction.x, direction.z)
+			$OldStockbk2.rotation.y = lerp_angle($OldStockbk2.rotation.y, target, 10 * delta)
+			#print(direction)
 		else:
 			velocity.x = move_toward(velocity.x, 0, decelerate_player() * delta)
 			velocity.z = move_toward(velocity.z, 0, decelerate_player() * delta)
