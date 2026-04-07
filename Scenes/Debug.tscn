@@ -294,8 +294,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.339877, 2.05082, -9.12925)
 [node name="RightArm" parent="Player/CharacterBody3D/OldStockbk2/OldStockBody" parent_id_path=PackedInt32Array(2140933658, 634374405, 73494557) index="4" unique_id=1890692902]
 transform = Transform3D(0.12940963, -0.19318503, 1.6198996e-08, 0.48296213, 0.0517639, -2.1111028e-08, 3.2398084e-08, 1.688877e-08, 0.25, -0.9912949, 0.10013771, -3.01458e-08)
 
-[node name="Node3D" type="Node3D" parent="Player/CharacterBody3D/OrbitCamera" index="1" unique_id=1705522347]
-
 [connection signal="body_entered" from="LevelGeometry/Area3D" to="." method="_on_level_completion" binds= [9001]]
 [connection signal="body_entered" from="LevelGeometry/Area3D2" to="." method="_on_level_completion" binds= [9001]]
 [connection signal="pressed" from="GUI/MenuDim/Panel/Resume" to="Player/CharacterBody3D/OrbitCamera" method="_on_resume_button"]
