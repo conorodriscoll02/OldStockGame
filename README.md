@@ -2,7 +2,7 @@
 <b>Note:</b> Please visit the <a href= "https://github.com/conorodriscoll02/OldStockGame/tree/ppit-archive">ppit-archive</a> branch if you are looking for the Professional Pratice in IT project.
 <h2> Created on Godot v4.6.1</h2>
 <br>If you would like to open the project:
-<br>-> Download and extract Godot 4.6.1 to a folder 
+<br>-> Download and extract Godot 4.7.1 to a folder 
 <br>-> Clone the repository to a folder
 <br>-> Open Godot and locate the the OldStockGame folder cloned previously
 
